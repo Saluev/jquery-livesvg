@@ -1,0 +1,23 @@
+{
+  "name": "livesvg",
+  "title": "jQuery Live SVG",
+  "description": "jQuery plugin making embedded SVGs alive",
+  "keywords": [
+    "svg",
+    "embedded"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Tigran G. Saluev",
+    "url": "http://saluev.com/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Saluev/jquery-livesvg/blob/1.0.0/MIT-LICENSE.txt"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.8"
+  }
+}

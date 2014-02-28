@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jquery-livesvg: rectangle example</title>
+    <meta content="">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery-livesvg.js"></script>
+  </head>
+  <body>
+  <object type="image/svg+xml" data="rectangle.svg">
+    <param name="width" value="177" />
+    <param name="height" value="108" />
+  </object>
+  <script type="text/javascript">
+      $("object")[0].addEventListener('load', function(w) {
+        console.log(w);
+        $(document).livesvg();
+      }, false);
+    </script>
+  </body>
+</html>
