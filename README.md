@@ -19,25 +19,25 @@ To add some action to your SVG images, use one of the following constructions:
 
 * Create a `<defs>` tag like the following:
 
-    <defs>
-      <ref id="width"  default="100"/>
-      <ref id="height" default="100"/>
-      <ref id="angle"  default="30.0"/>
-    </defs>
+    &lt;defs&gt;
+      &lt;ref id="width"  default="100"/&gt;
+      &lt;ref id="height" default="100"/&gt;
+      &lt;ref id="angle"  default="30.0"/&gt;
+    &lt;/defs&gt;
 
 Now you have defined a set of parameters, namely, `width`, `height` and `angle`.
 
 * Now use defined parameters in XML code like this:
 
-  <g transform="rotate(#angle)">
+  &lt;g transform="rotate(#angle)"&gt;
     ...
-  </g>
+  &lt;/g&gt;
 
 * Go even further and apply some complex computations using `$(...);` construction:
 
-  <g transform="rotate(#alpha $(#width/2); $(#height/2);)">
+  &lt;g transform="rotate(#alpha $(#width/2); $(#height/2);)"&gt;
     ...
-  </g>
+  &lt;/g&gt;
 
 You are free to place any JavaScript expression into the brackets.
 
@@ -52,10 +52,10 @@ two ways to do that:
 
 * Specify values in `<param>` tags:
 
-  <object type="image/svg+xml" data="rectangle.svg">
-    <param name="width"  value="177" /><!-- any values here -->
-    <param name="height" value="108" />
-  </object>
+  &lt;object type="image/svg+xml" data="rectangle.svg"&gt;
+    &lt;param name="width"  value="177" /&gt;&lt;!-- any values here --&gt;
+    &lt;param name="height" value="108" /&gt;
+  &lt;/object&gt;
 
 * Set values dynamically:
 
