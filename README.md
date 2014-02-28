@@ -68,7 +68,7 @@ two ways to do that:
 
 Use
 
-   $("#mysvg").livexml({angle: null})
+    $("#mysvg").livexml({angle: null})
 
 to return to `angle` it's default value.
 
